@@ -12,7 +12,6 @@ namespace ExtendType.OfCollection.Abstraction
 		/// Wraps an underlying type in a list of an abstract type
 		/// </summary>
 		public static IList<TTo> AsAbstract<TFrom, TTo>(this IList<TFrom> instance)
-			where TFrom : new()
 			where TFrom : TTo
 		{
 			if (instance == null) return null;
@@ -22,7 +21,6 @@ namespace ExtendType.OfCollection.Abstraction
 		/// Wraps an underlying type in a collection of an abstract type
 		/// </summary>
 		public static ICollection<TTo> AsAbstract<TFrom, TTo>(this ICollection<TFrom> instance)
-			where TFrom : new()
 			where TFrom : TTo
 		{
 			if (instance == null) return null;

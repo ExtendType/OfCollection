@@ -3,8 +3,8 @@
 		<Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
 	</PropertyGroup>
 	<ItemGroup>
-		<Package Include="ExtendType.OfString\ExtendType.OfCollection.csproj"/>
-		<Specification Include="ExtendType.OfString.nuspec"/>
+		<Package Include="ExtendType.OfCollection\ExtendType.OfCollection.csproj"/>
+		<Specification Include="ExtendType.OfCollection.nuspec"/>
 		<FrameworkVersion Include="v4.5">
 			<PackagePath>net45</PackagePath>
 		</FrameworkVersion>
