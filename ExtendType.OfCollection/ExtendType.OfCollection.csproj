@@ -42,6 +42,7 @@
     <Compile Include="Abstraction\Extensions.cs" />
     <Compile Include="Abstraction\CollectionOfAbstract.cs" />
     <Compile Include="Abstraction\ListOfAbstract.cs" />
+    <Compile Include="ObjectModel\Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
