@@ -3,17 +3,20 @@
 	<metadata>
 		<language>en-us</language>
 		<id>ExtendType.OfCollection</id>
-		<version>0.0.1</version>
+		<version>0.0.4</version>
 		<authors>Scott Wood</authors>
 		<owners>AbstractLabs</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>A library of fluent utility extensions for System.Collections types</description>
 		<summary>A library of fluent utility extensions for System.Collections types</summary>
-		<projectUrl>https://github.com/ExtendType/OfString</projectUrl>
-		<licenseUrl>https://github.com/ExtendType/OfString/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/ExtendType/OfCollection</projectUrl>
+		<licenseUrl>https://github.com/ExtendType/OfCollection/blob/master/LICENSE</licenseUrl>
 		<copyright>AbstractLabs 2014</copyright>
 		<tags>fluent collection utility extensions</tags>
 		<releaseNotes>
+			0.0.4 - Added collection synchronization extensions
+			0.0.3 - Fixed bug causing null exception on any new item in object model extensions
+			0.0.2 - Added builder pattern methods on object model observable collection types
 			0.0.1 - Added support for abstract list and collection types
 		</releaseNotes>
 	</metadata>
