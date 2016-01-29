@@ -3,7 +3,7 @@
 	<metadata>
 		<language>en-us</language>
 		<id>ExtendType.OfCollection</id>
-		<version>0.0.4</version>
+		<version>0.0.5</version>
 		<authors>Scott Wood</authors>
 		<owners>AbstractLabs</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,6 +14,7 @@
 		<copyright>AbstractLabs 2014</copyright>
 		<tags>fluent collection utility extensions</tags>
 		<releaseNotes>
+			0.0.5 - Added additional method comments
 			0.0.4 - Added collection synchronization extensions
 			0.0.3 - Fixed bug causing null exception on any new item in object model extensions
 			0.0.2 - Added builder pattern methods on object model observable collection types

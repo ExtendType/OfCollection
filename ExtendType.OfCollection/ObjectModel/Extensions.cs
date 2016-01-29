@@ -10,6 +10,9 @@ namespace ExtendType.OfCollection.ObjectModel
 {
 	public static class Extensions
 	{
+		/// <summary>
+		/// Adds an action to the supplied observable collection upon adding a new item
+		/// </summary>
 		public static ObservableCollection<T> OnAdd<T>(this ObservableCollection<T> instance, Action<T> action)
 		{
 			instance.CollectionChanged += (s, e) =>
@@ -18,6 +21,9 @@ namespace ExtendType.OfCollection.ObjectModel
 			};
 			return instance;
 		}
+		/// <summary>
+		/// Adds an action to the supplied observable collection upon updating or replacing an item
+		/// </summary>
 		public static ObservableCollection<T> OnReplace<T>(this ObservableCollection<T> instance, Action<T> newItems, Action<T> oldItems)
 		{
 			instance.CollectionChanged += (s, e) =>
@@ -30,7 +36,9 @@ namespace ExtendType.OfCollection.ObjectModel
 			};
 			return instance;
 		}
-
+		/// <summary>
+		/// Adds an action to the supplied observable collection upon removing an item
+		/// </summary>
 		public static ObservableCollection<T> OnRemove<T>(this ObservableCollection<T> instance, Action<T> action)
 		{
 			instance.CollectionChanged += (s, e) =>
@@ -39,6 +47,9 @@ namespace ExtendType.OfCollection.ObjectModel
 			};
 			return instance;
 		}
+		/// <summary>
+		/// Adds an action to the supplied observable collection upon resetting the collection
+		/// </summary>
 		public static ObservableCollection<T> OnReset<T>(this ObservableCollection<T> instance, Action<T> action)
 		{
 			instance.CollectionChanged += (s, e) =>
@@ -47,6 +58,9 @@ namespace ExtendType.OfCollection.ObjectModel
 			};
 			return instance;
 		}
+		/// <summary>
+		/// Adds an action to the supplied observable collection upon any change to the collection
+		/// </summary>
 		public static ObservableCollection<T> OnAnyItem<T>(this ObservableCollection<T> instance, Action<T> action)
 		{
 			instance.CollectionChanged += (s, e) =>
@@ -56,6 +70,9 @@ namespace ExtendType.OfCollection.ObjectModel
 			};
 			return instance;
 		}
+		/// <summary>
+		/// Adds an action to the supplied observable collection with any new items added through add or update
+		/// </summary>
 		public static ObservableCollection<T> OnAnyNewItem<T>(this ObservableCollection<T> instance, Action<T> action)
 		{
 			instance.CollectionChanged += (s, e) =>
@@ -64,6 +81,9 @@ namespace ExtendType.OfCollection.ObjectModel
 			};
 			return instance;
 		}
+		/// <summary>
+		/// Adds an action to the supplied observable collection upon any old or removed item through remove or update
+		/// </summary>
 		public static ObservableCollection<T> OnAnyOldItem<T>(this ObservableCollection<T> instance, Action<T> action)
 		{
 			instance.CollectionChanged += (s, e) =>

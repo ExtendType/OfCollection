@@ -14,8 +14,7 @@ namespace ExtendType.OfCollection.Abstraction
 		{
 			Target = from;
 		}
-
-
+		
 		public void Add(TTo item)
 		{
 			Target.Add((TFrom)item);
